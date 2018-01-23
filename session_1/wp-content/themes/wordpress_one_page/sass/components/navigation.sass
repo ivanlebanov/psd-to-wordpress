@@ -1,0 +1,44 @@
+.skip-link
+  display: none
+.admin-bar
+  .site-header
+    top: 32px
+.site-header
+  width: 100%
+  float: left
+  position: absolute
+  top: 0
+  left: 0
+  z-index: 100
+  padding: 20px 0
+  .site-branding
+    display: block
+    float: left
+    img
+      max-height: 50px
+      width: auto
+      display: block
+  #site-navigation
+    display: block
+    float: right
+    margin-top: 17px
+    li
+      margin: 0 10px
+      &.current_page_item
+        a
+          color: $navigation-color--active
+      a
+        padding: 0 10px
+        text-transform: uppercase
+        color: $navigation-color
+        font-family: 'Montserrat'
+        font-weight: 400
+        display: block
+        -webkit-transition: all .3s ease-in-out
+        -moz-transition: all .3s ease-in-out
+        -o-transition: all .3s ease-in-out
+        transition: all .3s ease-in-out
+        font-weight: bold
+        letter-spacing: 2px
+        &:hover, &:focus
+          color: $navigation-color--active
